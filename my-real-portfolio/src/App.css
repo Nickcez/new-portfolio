@@ -93,7 +93,7 @@ img {
   padding: 6rem 0 2rem;
 }
 
-.section__tile {
+.section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
@@ -104,7 +104,7 @@ img {
   margin-bottom: 4rem;
 }
 
-.section__tile,
+.section__title,
 .section__subtitle {
   text-align: center;
 }
@@ -122,7 +122,7 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: #000;
   color: var(--container-color);
   font-weight: var(--font-medium);
   padding: 1.25rem 2rem;
@@ -130,7 +130,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: #000;
 }
 
 .button__icon {
@@ -142,16 +142,26 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   .container {
     margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-    
+    margin-right: var(--mb-1-5); 
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  
+  .section {
+    padding: 2rem 0 4rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -163,6 +173,9 @@ img {
 }
 
 @media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
