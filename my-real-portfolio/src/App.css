@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 :root {
   --header-height: 3rem;
   
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(vas(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(vas(--hue), var(--sat), 0%);
-  --text-color: hsl(vas(--hue), var(--sat), 46%);
-  --body-color: hsl(vas(--hue), var(--sat), 98%);
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+
+  --body-font: "Poppins", sans-serif;
 
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --big-font-size: 3.5rem;
-  --normal-font-size: 3.5rem;
-  --small-font-size: 1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
   --tiny-font-size: 0.625rem;
 
@@ -57,6 +61,7 @@ body,
 button,
 input,
 textarea {
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
 
@@ -122,7 +127,7 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #000;
+  background-color: var(--title-color);
   color: var(--container-color);
   font-weight: var(--font-medium);
   padding: 1.25rem 2rem;
@@ -130,7 +135,7 @@ img {
 }
 
 .button:hover {
-  background-color: #000;
+  background-color: var(--title-color-dark);
 }
 
 .button__icon {
@@ -159,8 +164,16 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 3rem 0;
+  }
+
   .section {
     padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
   }
 }
 
