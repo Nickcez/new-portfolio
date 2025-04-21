@@ -1,5 +1,6 @@
 .title {
     text-align: center;
+    padding: 80px;
 }
 
 .article-container {
@@ -15,4 +16,9 @@
     width: 450px;
     height: 500px;
     border-radius: 10px;
+}
+
+.project_description {
+    align-content: center;
+    width: 200px;
 }
