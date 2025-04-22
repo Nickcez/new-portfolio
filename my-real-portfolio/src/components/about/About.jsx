@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/test_profile.jpeg";
-import CV from  "../../assets/CV_Nicolas_Cesaire_2024-Copy.pdf";
+import CV from  "../../assets/CV_Nicolas_Cesaire_2025.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
                 <div className="about__data">
                     <Info />
                     <p className="about__description">
-                        I love to work with UI/UX user interfaces.
+                    I'm a full-stack web developer with a strong focus on Java Spring and C#. I graduated from the Concordia University Coding Bootcamp in 2023, and before that, I was teaching myself to code through Codecademy. Since then, I’ve kept sharpening my skills by continuously building apps and exploring new technologies.
                     </p>
                     <a download="" href={CV} className="button button--flex">
                         Download CV
